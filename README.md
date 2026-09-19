@@ -27,20 +27,26 @@ Install the required Python packages:
 
 ```bash
 pip install playwright qrcode pillow
-3. Playwright Browser Setup
+```
+
+### 3. Playwright Browser Setup
 Playwright requires its dedicated Chromium browser binaries to capture high-resolution screenshots. Run the following command after installing the Python package:
 
-Bash
+```Bash
 playwright install chromium
+```
+
 Note: If you skip this step, the script will still generate HTML files, but it will be unable to export the .jpg images.
 
-Usage Instructions
+### 4. Usage Instructions
 Place Input Files: Put your .mcb recipe archives or existing .xml export files in the same directory as the script.
 
 Execute Script: Run the main Python script:
 
-Bash
+```Bash
 python convert.py
+```
+
 Follow the Interactive Prompts:
 
 Format Selection: Choose which layout(s) you wish to build ([1] Card, [2] Fold, [3] QR, or [4] All).
